@@ -3,7 +3,7 @@
 /* colors for the whole document */
 :root {
   --main-bg-color: linear-gradient(
-    63.18deg,
+    to right,
     #8bbf96 0%,
     #43ac99 0.01%,
     #dbdd88 100%
@@ -74,7 +74,7 @@ body {
   display: block;
   margin: 0 auto;
   width: 1200px;
-  height: 2000px;
+  height: 3000px;
   text-align: center;
   background: var(--container-bg-color);
   border-radius: 50px 50px 0 0;
@@ -85,7 +85,6 @@ body {
     display: block;
     margin: 0 auto;
     width: 1000px;
-    height: 2000px;
     text-align: center;
     background: var(--container-bg-color);
     border-radius: 30px 30px 0 0;
@@ -97,7 +96,6 @@ body {
     display: block;
     margin: 0 auto;
     width: 800px;
-    height: 2000px;
     text-align: center;
     background: var(--container-bg-color);
     border-radius: 30px 30px 0 0;
@@ -109,7 +107,6 @@ body {
     display: block;
     margin: 0 auto;
     width: 500px;
-    height: 2000px;
     text-align: center;
     background: var(--container-bg-color);
     border-radius: 30px 30px 0 0;
@@ -121,7 +118,6 @@ body {
     display: block;
     margin: 0 auto;
     width: 400px;
-    height: 2000px;
     text-align: center;
     background: var(--container-bg-color);
     border-radius: 30px 30px 0 0;
@@ -133,7 +129,6 @@ body {
     display: block;
     margin: 0 auto;
     width: 300px;
-    height: 2000px;
     text-align: center;
     background: var(--container-bg-color);
     border-radius: 20px 20px 0 0;
@@ -601,12 +596,12 @@ body {
 
 /* main section start */
 .main {
-  margin: 30px auto;
+  margin: 20px auto;
   display: flex;
 }
 
 .profile {
-  margin: 40px auto;
+  margin: auto;
   width: 300px;
   height: 200px;
   text-align: center;
@@ -617,8 +612,9 @@ body {
 .intro {
   margin: 0 60px 0 40px;
   width: 700px;
-  height: 270px;
+  height: 290px;
   text-align: center;
+  line-height: 27px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -645,10 +641,8 @@ body {
     margin: 20px auto;
     width: 700px;
     height: 250px;
-    /* margin: 20px 30px; */
-    /* width: 700px;
-    height: 180px; */
     text-align: center;
+    line-height: 27px;
   }
 }
 
@@ -674,8 +668,9 @@ body {
   .intro {
     margin: 20px auto;
     width: 700px;
-    height: 230px;
+    height: 240px;
     text-align: center;
+    line-height: 27px;
   }
 }
 
@@ -701,8 +696,9 @@ body {
   .intro {
     margin: 20px auto;
     width: 450px;
-    height: 320px;
+    height: 325px;
     text-align: left;
+    line-height: 27px;
   }
 }
 
@@ -728,8 +724,9 @@ body {
   .intro {
     margin: 10px auto;
     width: 300px;
-    height: 430px;
+    height: 460px;
     text-align: left;
+    line-height: 27px;
   }
 }
 
@@ -755,8 +752,9 @@ body {
   .intro {
     margin: 10px auto;
     width: 250px;
-    height: 540px;
+    height: 565px;
     text-align: left;
+    line-height: 27px;
   }
 }
 /* main section end */
@@ -764,6 +762,201 @@ body {
 /* whatIdo section start */
 .whatIdo {
   margin: 30px auto;
+  width: 1100px;
+  height: 420px;
+}
+
+.whatIdo-header {
+  margin: 0 10px 50px 10px;
+  text-align: center;
+  line-height: 15px;
+}
+
+.whatIdo-content {
+  margin: 30px auto;
+  width: 1000px;
+  height: 300px;
+  background: var(--hero-card-bg-color);
+  border-radius: 50px;
+  display: flex;
+}
+
+.whatIdo-content .tasks {
+  margin: auto;
+  width: 550px;
+  height: 290px;
+  text-align: left;
+}
+
+.whatIdo-content .task-picture {
+  margin: auto;
+  width: 410px;
+  height: 215px;
+  background-image: url(./images/task-picture.png);
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  .whatIdo {
+    margin: 30px auto;
+    width: 900px;
+    height: 450px;
+  }
+
+  .whatIdo-header {
+    margin: 0 10px 30px 10px;
+    text-align: center;
+    line-height: 25px;
+  }
+
+  .whatIdo-content {
+    margin: auto;
+    width: 900px;
+    height: 320px;
+    background: var(--hero-card-bg-color);
+    border-radius: 50px;
+    display: flex;
+  }
+
+  .whatIdo-content .tasks {
+    margin: auto;
+    width: 450px;
+    height: 290px;
+    text-align: left;
+  }
+
+  .whatIdo-content .task-picture {
+    margin: auto;
+    width: 410px;
+    height: 215px;
+    background-image: url(./images/task-picture.png);
+    border-radius: 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .whatIdo {
+    margin: 30px auto;
+    width: 800px;
+    height: 450px;
+  }
+
+  .whatIdo-header {
+    margin: 0 10px 30px 10px;
+    text-align: center;
+    line-height: 25px;
+  }
+
+  .whatIdo-content {
+    margin: auto;
+    width: 750px;
+    height: 320px;
+    background: var(--hero-card-bg-color);
+    border-radius: 50px;
+    display: flex;
+  }
+
+  .whatIdo-content .tasks {
+    margin: auto;
+    width: 330px;
+    height: 290px;
+    text-align: left;
+  }
+
+  .whatIdo-content .task-picture {
+    margin: auto;
+    width: 410px;
+    height: 215px;
+    background-image: url(./images/task-picture.png);
+    border-radius: 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .whatIdo {
+    margin: 30px auto;
+    width: 450px;
+    height: 470px;
+  }
+
+  .whatIdo-header {
+    margin: 0 10px 30px 10px;
+    text-align: center;
+    line-height: 25px;
+  }
+
+  .whatIdo-content {
+    margin: auto;
+    width: 450px;
+    height: 320px;
+    background: var(--hero-card-bg-color);
+    border-radius: 50px;
+    display: block;
+  }
+
+  .whatIdo-content .tasks {
+    position: absolute;
+    margin: 25px;
+    text-align: left;
+  }
+
+  .whatIdo-content .task-picture {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .whatIdo {
+    margin: 30px auto;
+    width: 350px;
+    height: 500px;
+  }
+
+  .whatIdo-content {
+    margin: auto;
+    width: 350px;
+    height: 320px;
+    background: var(--hero-card-bg-color);
+    border-radius: 50px;
+    display: block;
+  }
+
+  .whatIdo-content .task-picture {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .whatIdo {
+    margin: 20px 20px;
+    width: 200px;
+    height: 550px;
+  }
+
+  .whatIdo-header {
+    /* margin: 0 10px 30px 10px; */
+    text-align: left;
+    line-height: 25px;
+  }
+
+  .whatIdo-content {
+    margin: auto;
+    width: 200px;
+    height: 320px;
+    background: var(--hero-card-bg-color);
+    border-radius: 20px;
+    display: block;
+  }
+
+  /* .whatIdo-content .tasks {
+    position: absolute;
+    margin: 15px;
+    text-align: left;
+  } */
+
+  .whatIdo-content .task-picture {
+    display: none;
+  }
 }
 
 /* whatIdo section end */
