@@ -761,201 +761,41 @@ body {
 
 /* whatIdo section start */
 .whatIdo {
-  margin: 30px auto;
-  width: 1100px;
-  height: 420px;
-}
-
-.whatIdo-header {
-  margin: 0 10px 50px 10px;
+  margin: 50px;
+  display: block;
   text-align: center;
-  line-height: 15px;
-}
-
-.whatIdo-content {
-  margin: 30px auto;
-  width: 1000px;
-  height: 300px;
-  background: var(--hero-card-bg-color);
-  border-radius: 50px;
-  display: flex;
-}
-
-.whatIdo-content .tasks {
-  margin: auto;
-  width: 550px;
-  height: 290px;
-  text-align: left;
-}
-
-.whatIdo-content .task-picture {
-  margin: auto;
-  width: 410px;
-  height: 215px;
-  background-image: url(./images/task-picture.png);
-  border-radius: 50px;
 }
 
 @media screen and (max-width: 1200px) {
   .whatIdo {
-    margin: 30px auto;
-    width: 900px;
-    height: 450px;
-  }
-
-  .whatIdo-header {
-    margin: 0 10px 30px 10px;
-    text-align: center;
-    line-height: 25px;
-  }
-
-  .whatIdo-content {
-    margin: auto;
-    width: 900px;
-    height: 320px;
-    background: var(--hero-card-bg-color);
-    border-radius: 50px;
-    display: flex;
-  }
-
-  .whatIdo-content .tasks {
-    margin: auto;
-    width: 450px;
-    height: 290px;
-    text-align: left;
-  }
-
-  .whatIdo-content .task-picture {
-    margin: auto;
-    width: 410px;
-    height: 215px;
-    background-image: url(./images/task-picture.png);
-    border-radius: 50px;
+    margin: 30px 150px;
   }
 }
 
 @media screen and (max-width: 1000px) {
   .whatIdo {
-    margin: 30px auto;
-    width: 800px;
-    height: 450px;
-  }
-
-  .whatIdo-header {
-    margin: 0 10px 30px 10px;
-    text-align: center;
-    line-height: 25px;
-  }
-
-  .whatIdo-content {
-    margin: auto;
-    width: 750px;
-    height: 320px;
-    background: var(--hero-card-bg-color);
-    border-radius: 50px;
-    display: flex;
-  }
-
-  .whatIdo-content .tasks {
-    margin: auto;
-    width: 330px;
-    height: 290px;
-    text-align: left;
-  }
-
-  .whatIdo-content .task-picture {
-    margin: auto;
-    width: 410px;
-    height: 215px;
-    background-image: url(./images/task-picture.png);
-    border-radius: 50px;
+    margin: 30px 40px;
   }
 }
 
 @media screen and (max-width: 800px) {
   .whatIdo {
-    margin: 30px auto;
-    width: 450px;
-    height: 470px;
-  }
-
-  .whatIdo-header {
-    margin: 0 10px 30px 10px;
-    text-align: center;
-    line-height: 25px;
-  }
-
-  .whatIdo-content {
-    margin: auto;
-    width: 450px;
-    height: 320px;
-    background: var(--hero-card-bg-color);
-    border-radius: 50px;
-    display: block;
-  }
-
-  .whatIdo-content .tasks {
-    position: absolute;
-    margin: 25px;
+    margin: 30px 20px;
     text-align: left;
-  }
-
-  .whatIdo-content .task-picture {
-    display: none;
   }
 }
 
 @media screen and (max-width: 600px) {
   .whatIdo {
-    margin: 30px auto;
-    width: 350px;
-    height: 500px;
-  }
-
-  .whatIdo-content {
-    margin: auto;
-    width: 350px;
-    height: 320px;
-    background: var(--hero-card-bg-color);
-    border-radius: 50px;
-    display: block;
-  }
-
-  .whatIdo-content .task-picture {
-    display: none;
+    margin: 30px 50px;
+    text-align: left;
   }
 }
 
 @media screen and (max-width: 400px) {
   .whatIdo {
-    margin: 20px 20px;
-    width: 200px;
-    height: 550px;
-  }
-
-  .whatIdo-header {
-    /* margin: 0 10px 30px 10px; */
-    text-align: left;
-    line-height: 25px;
-  }
-
-  .whatIdo-content {
-    margin: auto;
-    width: 200px;
-    height: 320px;
-    background: var(--hero-card-bg-color);
-    border-radius: 20px;
-    display: block;
-  }
-
-  /* .whatIdo-content .tasks {
-    position: absolute;
-    margin: 15px;
-    text-align: left;
-  } */
-
-  .whatIdo-content .task-picture {
-    display: none;
+    margin: 25px;
+    align-items: left;
   }
 }
 
