@@ -777,17 +777,177 @@ body {
 }
 /* whatIdo section end */
 
+/* experiences section start */
 #experiences {
-  margin: 50px;
+  margin: 30px 0 50px 0;
   display: block;
-  text-align: center;
+  line-height: 27px;
+}
+
+#experiences h2 {
+  margin: 0 0 40px 0;
+}
+
+/* university experiences section start */
+.university {
+  margin: auto;
+  width: 1100px;
+  height: 340px;
+  background-color: var(--hero-card-bg-color);
+  border-radius: 50px;
+  display: flex;
+  text-align: left;
+}
+
+.uni-intro {
+  width: 470px;
+  margin: auto;
+  padding: 20px;
+}
+
+.uni-intro h3 {
+  margin: 20px 0 0 0 !important;
+  line-height: 10px !important;
+}
+
+.uni-intro h4 {
+  margin: 20px 0 30px 0 !important;
+  line-height: 10px !important;
+}
+
+.uni-skills {
+  width: 420px;
+  margin: auto;
+  padding: 20px;
 }
 
 @media screen and (max-width: 1200px) {
-  #experiences {
-    margin: 30px 150px;
+  .university {
+    width: 900px;
+    height: 350px;
+    border-radius: 30px;
+  }
+
+  .uni-intro {
+    width: 470px;
+  }
+
+  .uni-skills {
+    width: 390px;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .university {
+    width: 700px;
+    height: 420px;
+    border-radius: 30px;
+  }
+
+  .uni-intro {
+    width: 390px;
+  }
+
+  .uni-skills {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .university {
+    width: 450px;
+    height: 650px;
+    display: block;
+  }
+
+  .uni-intro {
+    width: 410px;
+    margin: auto;
+    padding: 30px 0 5px 0;
+  }
+
+  .uni-skills {
+    width: 430px;
+    margin: auto;
+    padding: 5px 0 10px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .university {
+    width: 350px;
+    height: 840px;
+    display: block;
+  }
+
+  .uni-intro {
+    width: 300px;
+    margin: auto;
+    padding: 10px 0 5px 0;
+  }
+
+  .uni-intro h3 {
+    line-height: 27px !important;
+    text-align: center;
+  }
+
+  .uni-intro h4 {
+    margin: 10px 0 30px 0 !important;
+    line-height: 10px !important;
+    text-align: center;
+  }
+
+  .uni-skills {
+    width: 300px;
+    margin: auto;
+    padding: 5px 0 10px 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #experiences {
+    margin: 30px 25px 10px 25px;
+    display: block;
+    line-height: 25px;
+    text-align: left;
+  }
+
+  #experiences h2 {
+    margin-bottom: 10px;
+  }
+
+  .university {
+    width: 250px;
+    height: 540px;
+    display: block;
+    background: none;
+  }
+
+  .uni-intro {
+    width: 250px;
+  }
+
+  .uni-intro h3 {
+    line-height: 23px !important;
+    text-align: left;
+  }
+
+  .uni-intro h4 {
+    line-height: 23px !important;
+    text-align: left;
+  }
+
+  .uni-skills {
+    display: none;
+    /* width: 200px;
+    margin: auto;
+    line-height: 25px !important;
+    padding: 5px 0 10px 0; */
+  }
+}
+/* university experiences section end */
+
+/* experiences section end */
 
 /* footer sectin start */
 .footer {
