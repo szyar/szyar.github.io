@@ -148,11 +148,15 @@ body {
   font-size: 18px;
 }
 
+.nav-logo {
+  text-decoration: none;
+  color: var(--header-logo-color);
+}
+
 .header-logo {
   align-self: center;
   justify-self: center;
   font-size: 30px;
-  color: var(--header-logo-color);
   cursor: pointer;
 }
 
@@ -166,6 +170,8 @@ body {
 
 .menu-item {
   margin: 0 30px;
+  text-decoration: none;
+  color: black;
   cursor: pointer;
 }
 
@@ -442,7 +448,7 @@ body {
   }
 
   .main {
-    margin: 20px auto;
+    margin: 30px auto;
     padding: 0;
     display: block;
   }
@@ -481,7 +487,7 @@ body {
   }
 
   .main {
-    margin: 50px auto;
+    margin: 30px auto;
     display: block;
   }
 
@@ -609,4 +615,8 @@ body {
     height: 540px;
     text-align: left;
   }
+}
+
+.whatIdo {
+  margin: 30px auto;
 }
