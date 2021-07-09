@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Poppins:wght@400;700&display=swap");
 
+/* colors for the whole document */
 :root {
   --main-bg-color: linear-gradient(
     63.18deg,
@@ -8,19 +9,20 @@
     #dbdd88 100%
   );
   --container-bg-color: rgba(255, 255, 255, 0.2);
-  --header-bg-color: rgba(255, 255, 255, 0.1);
+  --header-bg-color: rgba(255, 255, 255, 0.2);
   --header-logo-color: #6a4a39;
   --header-logo-hover-bg-color: #a19b95;
   --menu-item-hover-color: #a74f6e;
+  --hero-card-bg-color: rgba(255, 255, 255, 0.2);
 }
 
+/* body section start */
 body {
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
   background: var(--main-bg-color);
 }
-
 /* @media screen and (max-width: 1200px) {
   body {
     padding: 0;
@@ -65,7 +67,9 @@ body {
     background: var(--main-bg-color);
   }
 } */
+/* body section end */
 
+/* .container section start */
 .container {
   display: block;
   margin: 0 auto;
@@ -135,7 +139,9 @@ body {
     border-radius: 20px 20px 0 0;
   }
 }
+/* container section end */
 
+/* header section start */
 .header {
   background: var(--header-bg-color);
   border-radius: 50px 50px 0 0;
@@ -402,21 +408,198 @@ body {
     color: var(--menu-item-hover-color);
   }
 }
+/* header section end */
 
+/* glass themed horizontal line */
 .glass-hr {
   margin: 0;
   border: 1px solid white;
   opacity: 0.2;
 }
 
+/* hero section start */
 .hero {
   margin: 50px auto;
   width: 1100px;
   height: 618.75px;
-  background-image: url(./Hero.png);
+  background: var(--hero-card-bg-color);
+  background-image: url(./images/Decorations.png);
   border-radius: 50px;
+  display: flex;
 }
 
+.hero-picture {
+  margin: auto 100px;
+  width: 298px;
+  height: 280px;
+  background-image: url(./images/proud298.png);
+  text-align: center;
+}
+
+.personal-info {
+  margin: auto;
+  font-size: 18px;
+  text-align: left;
+}
+
+.personal-info h2 {
+  margin: 0 0 30px 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero {
+    margin: 40px auto;
+    width: 900px;
+    height: 500px;
+    background: var(--hero-card-bg-color);
+    background-image: url(./images/Decorations900.png);
+    border-radius: 30px;
+    display: flex;
+  }
+
+  .hero-picture {
+    margin: auto 70px;
+    width: 298px;
+    height: 280px;
+    background-image: url(./images/proud298.png);
+    text-align: center;
+  }
+
+  .personal-info {
+    margin: auto;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .personal-info h2 {
+    margin: 0 0 30px 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hero {
+    margin: 30px auto;
+    width: 700px;
+    height: 393.75px;
+    background: var(--hero-card-bg-color);
+    background-image: url(./images/Decorations700.png);
+    border-radius: 30px;
+    display: flex;
+  }
+
+  .hero-picture {
+    margin: auto 30px;
+    width: 230px;
+    height: 217px;
+    background-image: url(./images/proud230.png);
+    text-align: center;
+  }
+
+  .personal-info {
+    margin: auto;
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .personal-info h2 {
+    margin: 0 0 30px 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hero {
+    margin: 30px auto;
+    width: 450px;
+    height: 300px;
+    background: var(--hero-card-bg-color);
+    background-image: url(./images/Decorations450.png);
+    border-radius: 30px;
+    display: flex;
+  }
+
+  .hero-picture {
+    margin: auto 10px;
+    width: 180px;
+    height: 169.13px;
+    background-image: url(./images/proud180.png);
+    text-align: center;
+  }
+
+  .personal-info {
+    margin: auto;
+    font-size: 10px;
+    text-align: left;
+  }
+
+  .personal-info h2 {
+    margin: 0 0 30px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    margin: 30px auto;
+    width: 350px;
+    height: 250px;
+    background: var(--hero-card-bg-color);
+    background-image: url(./images/Decorations350.png);
+    border-radius: 30px;
+    display: flex;
+  }
+
+  .hero-picture {
+    display: none;
+  }
+
+  .personal-info {
+    margin: auto;
+    font-size: 10px;
+    text-align: left;
+  }
+
+  .personal-info h2 {
+    margin: 0 0 15px 0;
+    text-align: center;
+  }
+
+  .personal-info p {
+    margin: 7px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero {
+    margin: 30px auto;
+    width: 250px;
+    height: 250px;
+    background: var(--hero-card-bg-color);
+    background-image: url(./images/Decorations250.png);
+    border-radius: 30px;
+    display: flex;
+  }
+
+  .hero-picture {
+    display: none;
+  }
+
+  .personal-info {
+    margin: 0 15px;
+    font-size: 10px;
+    text-align: left;
+  }
+
+  .personal-info h2 {
+    margin: 10px 0 15px 0;
+    text-align: center;
+  }
+
+  .personal-info p {
+    margin: 7px;
+  }
+}
+/* hero section end */
+
+/* main section start */
 .main {
   margin: 30px auto;
   display: flex;
@@ -439,14 +622,6 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-  .hero {
-    margin: 50px auto;
-    width: 800px;
-    height: 450px;
-    background-image: url(./images/Hero800.png);
-    border-radius: 30px;
-  }
-
   .main {
     margin: 30px auto;
     padding: 0;
@@ -478,14 +653,6 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
-  .hero {
-    margin: 30px auto;
-    width: 700px;
-    height: 393.75px;
-    background-image: url(./images/Hero700.png);
-    border-radius: 30px;
-  }
-
   .main {
     margin: 30px auto;
     display: block;
@@ -513,14 +680,6 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-  .hero {
-    margin: 30px auto;
-    width: 400px;
-    height: 225px;
-    background-image: url(./images/Hero400.png);
-    border-radius: 30px;
-  }
-
   .main {
     margin: 30px auto;
     display: block;
@@ -548,14 +707,6 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .hero {
-    margin: 30px auto;
-    width: 300px;
-    height: 168.75px;
-    background-image: url(./images/Hero300.png);
-    border-radius: 30px;
-  }
-
   .main {
     margin: 30px auto;
     display: block;
@@ -583,14 +734,6 @@ body {
 }
 
 @media screen and (max-width: 400px) {
-  .hero {
-    margin: 30px auto;
-    width: 200px;
-    height: 112.5px;
-    background-image: url(./images/Hero200.png);
-    border-radius: 30px;
-  }
-
   .main {
     margin: 30px auto;
     display: block;
@@ -616,7 +759,11 @@ body {
     text-align: left;
   }
 }
+/* main section end */
 
+/* whatIdo section start */
 .whatIdo {
   margin: 30px auto;
 }
+
+/* whatIdo section end */
