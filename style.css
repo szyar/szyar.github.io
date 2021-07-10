@@ -1420,10 +1420,11 @@ body a {
 
 @media screen and (max-width: 1000px) {
   #contact {
-    height: 180px;
+    height: 140px;
     width: 720px;
     margin: auto;
-    line-height: 27px;
+    font-size: 14px;
+    line-height: 23px;
   }
 
   #contact p {
@@ -1433,10 +1434,11 @@ body a {
 
 @media screen and (max-width: 800px) {
   #contact {
-    height: 200px;
+    height: 140px;
     width: 450px;
     margin: auto;
-    line-height: 27px;
+    font-size: 12px;
+    line-height: 21px;
   }
 
   #contact p {
@@ -1446,10 +1448,9 @@ body a {
 
 @media screen and (max-width: 600px) {
   #contact {
-    height: 230px;
+    height: 160px;
     width: 350px;
     margin: auto;
-    line-height: 27px;
   }
 
   #contact p {
@@ -1459,10 +1460,10 @@ body a {
 
 @media screen and (max-width: 400px) {
   #contact {
-    height: 250px;
+    height: 130px;
     width: 320px;
     margin: auto;
-    line-height: 27px;
+    font-size: 10px;
   }
 
   #contact p {
