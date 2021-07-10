@@ -799,88 +799,128 @@ body {
   margin: 0 0 40px 0;
 }
 
-/* frontiir experiences section start */
-.frontiir {
+.exp-card {
   margin: 50px auto;
   width: 1100px;
-  height: 300px;
   background-color: var(--hero-card-bg-color);
   border-radius: 50px;
   display: flex;
   text-align: left;
 }
 
-.frontiir-intro {
-  width: 470px;
+.frontiir-card {
+  height: 300px;
+}
+
+.uni-card {
+  height: 340px;
+}
+
+.kakehashi-card {
+  height: 600px;
+}
+
+.exp-intro,
+.exp-skills {
   margin: auto;
   padding: 20px;
 }
 
-.frontiir-intro h3 {
+.frontiir-intro,
+.uni-intro,
+.kakehashi-intro {
+  width: 470px;
+}
+
+.exp-intro h3 {
   margin: 20px 0 0 0 !important;
   line-height: 10px !important;
 }
 
-.frontiir-intro h4 {
-  margin: 20px 0 30px 0 !important;
-  line-height: 10px !important;
+.exp-intro h4 {
+  margin: 10px 0 30px 0 !important;
+  line-height: 18px !important;
 }
 
-.frontiir-skills {
+.frontiir-skills,
+.uni-skills,
+.kakehashi-skills {
   width: 420px;
-  margin: auto;
-  padding: 20px;
 }
 
 @media screen and (max-width: 1200px) {
-  .frontiir {
+  .exp-card {
     width: 900px;
-    height: 300px;
     border-radius: 30px;
   }
 
-  .frontiir-intro {
+  .uni-card {
+    height: 350px;
+  }
+
+  .kakehashi-card {
+    height: 610px;
+  }
+
+  .frontiir-intro,
+  .uni-intro,
+  .kakehashi-intro {
     width: 470px;
   }
 
-  .frontiir-skills {
+  .frontiir-skills,
+  .uni-skills,
+  .kakehashi-skills {
     width: 390px;
   }
 }
 
 @media screen and (max-width: 1000px) {
+  #experiences {
+    margin: 30px 0;
+    display: block;
+    line-height: 23px;
+  }
+
   #experiences h2 {
     margin: 0;
     font-size: 21px;
   }
 
-  .frontiir {
+  .exp-card {
     margin: 30px auto;
     width: 700px;
-    height: 300px;
     border-radius: 30px;
   }
 
-  .frontiir-intro {
-    width: 390px;
-    font-size: 14px;
-    line-height: 23px;
+  .uni-card {
+    height: 340px;
   }
 
-  .frontiir-intro h3 {
+  .exp-intro,
+  .exp-skills {
+    font-size: 14px;
+  }
+
+  .frontiir-intro,
+  .uni-intro,
+  .kakehashi-intro {
+    width: 390px;
+  }
+  .exp-intro h3 {
     margin: 10px 0 0 0 !important;
     line-height: 10px !important;
   }
 
-  .frontiir-intro h4 {
+  .exp-intro h4 {
     margin: 10px 0 30px 0 !important;
-    line-height: 10px !important;
+    line-height: 15px !important;
   }
 
-  .frontiir-skills {
+  .frontiir-skills,
+  .uni-skills,
+  .kakehashi-skills {
     width: 320px;
-    font-size: 14px;
-    line-height: 23px;
   }
 }
 
@@ -890,33 +930,51 @@ body {
     font-size: 18px;
   }
 
-  .frontiir {
+  .exp-card {
     margin: 30px auto;
     width: 450px;
-    height: 360px;
     display: block;
   }
 
-  .frontiir-intro {
-    width: 410px;
+  .frontiir-card {
+    height: 360px;
+  }
+
+  .uni-card {
+    height: 480px;
+  }
+
+  .kakehashi-card {
+    height: 690px;
+  }
+
+  .exp-intro {
     margin: auto;
     padding: 20px 0 5px 0;
     font-size: 12px;
     line-height: 21px;
   }
 
-  .frontiir-intro h3 {
+  .frontiir-intro,
+  .uni-intro,
+  .kakehashi-intro,
+  .frontiir-skills,
+  .uni-skills,
+  .kakehashi-skills {
+    width: 410px;
+  }
+
+  .exp-intro h3 {
     margin: 10px 0 0 0 !important;
     line-height: 10px !important;
   }
 
-  .frontiir-intro h4 {
+  .exp-intro h4 {
     margin: 10px 0 30px 0 !important;
-    line-height: 10px !important;
+    line-height: 12px !important;
   }
 
-  .frontiir-skills {
-    width: 410px;
+  .exp-skills {
     margin: auto;
     padding: 5px 0 10px 0;
     font-size: 12px;
@@ -925,30 +983,48 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .frontiir {
+  .exp-card {
     width: 350px;
-    height: 410px;
     display: block;
   }
 
-  .frontiir-intro {
-    width: 300px;
+  .frontiir-card {
+    height: 410px;
+  }
+
+  .uni-card {
+    height: 540px;
+  }
+
+  .kakehashi-card {
+    height: 900px;
+  }
+
+  .exp-intro {
     margin: auto;
     padding: 20px 0 5px 0;
   }
 
-  .frontiir-intro h3 {
+  .frontiir-intro,
+  .frontiir-skills,
+  .uni-intro,
+  .uni-skills,
+  .kakehashi-intro,
+  .kakehashi-skills {
+    width: 300px;
+  }
+
+  .exp-intro h3 {
     margin: 10px 0 0 0 !important;
     line-height: 10px !important;
   }
 
-  .frontiir-intro h4 {
-    margin: 10px 0 20px 0 !important;
-    line-height: 10px !important;
+  .exp-intro h4 {
+    margin: 7px 0 20px 0 !important;
+    line-height: 15px !important;
   }
 
-  .frontiir-skills {
-    width: 300px;
+  .exp-skills {
     margin: auto;
     padding: 5px 0 10px 0;
   }
@@ -956,9 +1032,8 @@ body {
 
 @media screen and (max-width: 400px) {
   #experiences {
-    margin: 30px 0 50px 0;
+    margin: 30px 0;
     display: block;
-    line-height: 27px;
   }
 
   #experiences h2 {
@@ -966,386 +1041,45 @@ body {
     text-align: center;
   }
 
-  .frontiir {
+  .exp-card {
     margin: 0 auto;
     width: 300px;
+    display: block;
+    background: none;
+  }
+
+  .frontiir-card {
     height: 160px;
-    display: block;
-    background: none;
   }
 
-  .frontiir-intro {
-    font-size: 10px;
-    line-height: 18px;
-  }
-
-  .frontiir-intro h3 {
-    line-height: 10px !important;
-    text-align: left;
-  }
-
-  .frontiir-intro h4 {
-    margin: 10px 0 20px 0 !important;
-    line-height: 10px !important;
-    text-align: left;
-  }
-
-  .frontiir-skills {
-    display: none;
-  }
-}
-/* frontiir experiences section end */
-
-/* university experiences section start */
-.university {
-  margin: auto;
-  width: 1100px;
-  height: 340px;
-  background-color: var(--hero-card-bg-color);
-  border-radius: 50px;
-  display: flex;
-  text-align: left;
-}
-
-.uni-intro {
-  width: 470px;
-  margin: auto;
-  padding: 20px;
-}
-
-.uni-intro h3 {
-  margin: 20px 0 0 0 !important;
-  line-height: 10px !important;
-}
-
-.uni-intro h4 {
-  margin: 20px 0 30px 0 !important;
-  line-height: 10px !important;
-}
-
-.uni-skills {
-  width: 420px;
-  margin: auto;
-  padding: 20px;
-}
-
-@media screen and (max-width: 1200px) {
-  .university {
-    width: 900px;
-    height: 350px;
-    border-radius: 30px;
-  }
-
-  .uni-intro {
-    width: 470px;
-  }
-
-  .uni-skills {
-    width: 390px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .university {
-    width: 700px;
-    height: 340px;
-    border-radius: 30px;
-  }
-
-  .uni-intro {
-    width: 390px;
-    font-size: 14px;
-    line-height: 23px;
-  }
-
-  .uni-intro h3 {
-    margin: 10px 0 0 0 !important;
-    line-height: 10px !important;
-  }
-
-  .uni-intro h4 {
-    margin: 10px 0 30px 0 !important;
-    line-height: 10px !important;
-  }
-
-  .uni-skills {
-    width: 320px;
-    font-size: 14px;
-    line-height: 23px;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .university {
-    width: 450px;
-    height: 480px;
-    display: block;
-  }
-
-  .uni-intro {
-    width: 410px;
-    margin: auto;
-    padding: 20px 0 5px 0;
-    font-size: 12px;
-    line-height: 21px;
-  }
-
-  .uni-intro h3 {
-    margin: 10px 0 0 0 !important;
-    line-height: 10px !important;
-  }
-
-  .uni-intro h4 {
-    margin: 10px 0 30px 0 !important;
-    line-height: 10px !important;
-  }
-
-  .uni-skills {
-    width: 430px;
-    margin: auto;
-    padding: 5px 0 10px 0;
-    font-size: 12px;
-    line-height: 21px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .university {
-    width: 350px;
-    height: 540px;
-    display: block;
-  }
-
-  .uni-intro {
-    width: 300px;
-    margin: auto;
-    padding: 20px 0 5px 0;
-  }
-
-  .uni-intro h3 {
-    margin: 10px 0 0 0 !important;
-    line-height: 10px !important;
-  }
-
-  .uni-intro h4 {
-    margin: 10px 0 20px 0 !important;
-    line-height: 10px !important;
-  }
-
-  .uni-skills {
-    width: 300px;
-    margin: auto;
-    padding: 5px 0 10px 0;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .university {
-    margin: 0 auto;
-    width: 300px;
+  .uni-card {
     height: 210px;
-    display: block;
-    background: none;
   }
 
-  .uni-intro {
+  .kakehashi-card {
+    height: 300px;
+  }
+
+  .exp-intro {
     font-size: 10px;
     line-height: 18px;
   }
 
-  .uni-intro h3 {
+  .exp-intro h3 {
     line-height: 10px !important;
     text-align: left;
   }
 
-  .uni-intro h4 {
-    margin: 10px 0 20px 0 !important;
+  .exp-intro h4 {
+    margin: 5px 0 20px 0 !important;
     line-height: 10px !important;
     text-align: left;
   }
 
-  .uni-skills {
+  .exp-skills {
     display: none;
   }
 }
-/* university experiences section end */
-
-/* kakehashi experiences section start */
-.kakehashi {
-  margin: 50px auto;
-  width: 1100px;
-  height: 600px;
-  background-color: var(--hero-card-bg-color);
-  border-radius: 50px;
-  display: flex;
-  text-align: left;
-}
-
-.kakehashi-intro {
-  width: 470px;
-  margin: auto;
-  padding: 20px;
-}
-
-.kakehashi-intro h3 {
-  margin: 20px 0 0 0 !important;
-  line-height: 10px !important;
-}
-
-.kakehashi-intro h4 {
-  margin: 20px 0 30px 0 !important;
-  line-height: 20px !important;
-}
-
-.kakehashi-skills {
-  width: 420px;
-  margin: auto;
-  padding: 20px;
-}
-
-@media screen and (max-width: 1200px) {
-  .kakehashi {
-    width: 900px;
-    height: 610px;
-    border-radius: 30px;
-  }
-
-  .kakehashi-intro {
-    width: 470px;
-  }
-
-  .kakehashi-skills {
-    width: 390px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .kakehashi {
-    margin: 30px auto;
-    width: 700px;
-    height: 570px;
-    border-radius: 30px;
-  }
-
-  .kakehashi-intro {
-    width: 390px;
-    font-size: 14px;
-    line-height: 23px;
-  }
-
-  .kakehashi-intro h3 {
-    margin: 10px 0 0 0 !important;
-    line-height: 10px !important;
-  }
-
-  .kakehashi-intro h4 {
-    margin: 10px 0 30px 0 !important;
-    line-height: 15px !important;
-  }
-
-  .kakehashi-skills {
-    width: 320px;
-    font-size: 14px;
-    line-height: 23px;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .kakehashi {
-    margin: 30px auto;
-    width: 450px;
-    height: 690px;
-    display: block;
-  }
-
-  .kakehashi-intro {
-    width: 410px;
-    margin: auto;
-    padding: 20px 0 5px 0;
-    font-size: 12px;
-    line-height: 21px;
-  }
-
-  .kakehashi-intro h3 {
-    margin: 10px 0 0 0 !important;
-    line-height: 10px !important;
-  }
-
-  .kakehashi-intro h4 {
-    margin: 10px 0 30px 0 !important;
-    line-height: 12px !important;
-  }
-
-  .kakehashi-skills {
-    width: 430px;
-    margin: auto;
-    padding: 5px 0 10px 0;
-    font-size: 12px;
-    line-height: 21px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .kakehashi {
-    width: 350px;
-    height: 900px;
-    display: block;
-  }
-
-  .kakehashi-intro {
-    width: 300px;
-    margin: auto;
-    padding: 20px 0 5px 0;
-  }
-
-  .kakehashi-intro h3 {
-    margin: 10px 0 0 0 !important;
-    line-height: 10px !important;
-  }
-
-  .kakehashi-intro h4 {
-    margin: 10px 0 20px 0 !important;
-    line-height: 18px !important;
-  }
-
-  .kakehashi-skills {
-    width: 300px;
-    margin: auto;
-    padding: 5px 0 10px 0;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .kakehashi {
-    margin: 0 auto;
-    width: 300px;
-    height: 280px;
-    display: block;
-    background: none;
-  }
-
-  .kakehashi-intro {
-    font-size: 10px;
-    line-height: 18px;
-  }
-
-  .kakehashi-intro h3 {
-    line-height: 15px !important;
-    text-align: left;
-  }
-
-  .kakehashi-intro h4 {
-    margin: 10px 0 20px 0 !important;
-    line-height: 10px !important;
-    text-align: left;
-  }
-
-  .kakehashi-skills {
-    display: none;
-  }
-}
-/* kakehashi experiences section end */
-
 /* experiences section end */
 
 /* footer sectin start */
