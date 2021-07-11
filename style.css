@@ -1403,15 +1403,19 @@ body a {
 
 /* contact section start */
 #contact {
-  height: 150px;
+  height: 1420px;
   width: 1100px;
   margin: auto;
   line-height: 27px;
 }
 
+.google-form {
+  margin: 30px auto;
+}
+
 @media screen and (max-width: 1200px) {
   #contact {
-    height: 180px;
+    height: 1440px;
     width: 900px;
     margin: auto;
     line-height: 27px;
@@ -1420,7 +1424,7 @@ body a {
 
 @media screen and (max-width: 1000px) {
   #contact {
-    height: 140px;
+    height: 1380px;
     width: 720px;
     margin: auto;
     font-size: 14px;
@@ -1443,6 +1447,10 @@ body a {
 
   #contact p {
     margin: 0;
+  }
+
+  .google-form {
+    display: none;
   }
 }
 
