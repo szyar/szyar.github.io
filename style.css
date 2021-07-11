@@ -1362,15 +1362,15 @@ body a {
 
   .project-left,
   .project-right {
-    margin: 10px 25px 30px 25px;
+    margin: 30px auto;
   }
 
   .p-2 {
-    background: var(--showcase-1-bg-color);
+    background: var(--showcase-2-bg-color);
   }
 
   .p-1 {
-    background: var(--showcase-2-bg-color);
+    background: var(--showcase-1-bg-color);
   }
 
   .p-3 {
