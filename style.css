@@ -1398,10 +1398,6 @@ body a {
   line-height: 27px;
 }
 
-.google-form {
-  margin: 30px auto;
-}
-
 @media screen and (max-width: 1200px) {
   #contact {
     height: 1440px;
@@ -1436,10 +1432,6 @@ body a {
 
   #contact p {
     margin: 0;
-  }
-
-  .google-form {
-    display: none;
   }
 }
 
